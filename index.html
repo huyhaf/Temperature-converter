@@ -11,17 +11,23 @@
     <body>
         <script src="main.js"></script>
         <div class="main">
-            <h1 class="title">Temperature Converter</h1>
-            <div>
-                <span>Result</span>
+            <h1 class="title" >Temperature Converter</h1>
+            <div class="ResultField">
+                <span style="font-size: 25px;">Result</span>
             </div>
-            <div>
-                <option value="">F</option>
-                <option value="">K</option>
+            <div class="input">
+                <label for="InputField">Degree</label>
+                <input type="text" id="InputField">
             </div>
-            <button id="convert">
-                Convert
-            </button>
+            <div class="TypeField">
+                <label for="Temp-type" style="font-size: 20px;">Type</label>
+                <select id="Temp-type" autocomplete="on">
+                    <option value="F degree">F</option>
+                    <option value="K degree">K</option>
+                </select>
+            </div>
+            
+            <button id="convert">Convert</button>
         </div>
     </body>
 </html>
