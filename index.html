@@ -3,31 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>replit</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
         <title>Temperature Converter</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
-        <script src="main.js"></script>
         <div class="main">
             <h1 class="title" >Temperature Converter</h1>
-            <div class="ResultField">
-                <span style="font-size: 25px;">Result</span>
-            </div>
+
             <div class="input">
                 <label for="InputField">Degree</label>
-                <input type="text" id="InputField">
+                <input type="number" id="InputField" />
             </div>
-            <div class="TypeField">
-                <label for="Temp-type" style="font-size: 20px;">Type</label>
-                <select id="Temp-type" autocomplete="on">
-                    <option value="F degree">F</option>
-                    <option value="K degree">K</option>
+
+            <div class="type">
+                <label for="Temptype">Type</label>
+                <select id="Temptype" autocomplete="on">
+                    <option value="None">Type of degree</option>
+                    <option value="F degree">F degree</option>
+                    <option value="K degree">K degree</option>
                 </select>
             </div>
-            
+
+            <div class="result">
+                Result
+                <span id="Result"></span>
+            </div>
+
             <button id="convert">Convert</button>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
